@@ -39,7 +39,7 @@ macro(build_open3d)
   )
 endmacro()
 
-if(NOT ${Open3D_FOUND} OR ${Open3D_VERSION} VERSION_LESS 0.15.1)
+if(NOT Open3D_FOUND OR "${Open3D_VERSION}" VERSION_LESS 0.15.1)
   build_open3d()
 endif()
 
